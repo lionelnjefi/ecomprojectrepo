@@ -6,5 +6,6 @@ public interface ProductModel {
     public String getProductTitle();
     public String getProductDescription();
     public BigDecimal getProductPrice();
+    public Boolean isAddedToCart();
 
 }
