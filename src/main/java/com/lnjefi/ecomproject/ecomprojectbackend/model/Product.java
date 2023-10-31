@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Data
-@AllArgsConstructor
+@NoArgsConstructor
 public class Product {
     @Id
     @GeneratedValue
