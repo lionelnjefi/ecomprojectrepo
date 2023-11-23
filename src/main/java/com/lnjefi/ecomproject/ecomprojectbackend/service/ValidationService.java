@@ -9,10 +9,10 @@ import java.util.regex.Pattern;
 public class ValidationService {
 
     public boolean validatePassword(String pin) {
-        String regex = "\\H\\d\\w{4}\\w{6}";
+        String regex = "^(\\d{4}|\\d{6})$";
 
-        final Pattern pattern = Pattern.compile(regex, Pattern.LITERAL);
+        final Pattern pattern = Pattern.compile(regex);
         final Matcher matcher = pattern.matcher(pin);
-        return matcher.find();
+        return matcher.matches();
     }
 }

@@ -25,4 +25,12 @@ public class Product {
     private BigDecimal productPrice;
     @NotNull
     private int productQuantity;
+
+
+    public Product(String productName, String productDescription, BigDecimal productPrice,int productQuantity) {
+        this.productName = productName;
+        this.productDescription = productDescription;
+        this.productPrice = productPrice;
+        this.productQuantity = productQuantity;
+    }
 }
